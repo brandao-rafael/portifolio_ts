@@ -16,7 +16,7 @@ export default class MainCoverLetter extends Component {
         </div>
         <div className="cover-buttons">
           <button type="button" className="btn btn-gradient">
-            Know more
+            Get in touch
           </button>
           <button type="button" className="btn btn-black">
             View my works
