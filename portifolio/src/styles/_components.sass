@@ -13,9 +13,12 @@
 .btn-white
     background-color: $lt-primary
     color: $bl-primary
+    transition: all 0.3s ease-in-out
     &:hover
-        background-color: $lt-secondary
-        color: $bl-secondary
+        background-color: $bl-primary
+        border: solid 1px $lt-secondary
+        color: $lt-secondary
+        transition: all 0.3s ease-in-out
         &:active
             background-color: $bl-primary
             color: $lt-secondary
@@ -24,9 +27,11 @@
     background-color: $bl-primary
     color: $lt-secondary
     border: solid 1px white
+    transition: all 0.3s ease-in-out
     &:hover
         background-color: $lt-secondary
         color: $bl-secondary
+        transition: all 0.3s ease-in-out
         &:active
             background-color: $bl-primary
             color: $lt-secondary
