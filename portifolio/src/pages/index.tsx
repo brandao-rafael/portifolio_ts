@@ -1,10 +1,10 @@
 import React from 'react';
-import HelloWorld from './HelloWorld';
-// import '../styles/main.sass';
+import MainPage from './MainPage';
+import '../styles/main.sass';
 
 
-const Home: React.FC = () => {
-  return <HelloWorld />;
+const Main: React.FC = () => {
+  return <MainPage />;
 };
 
-export default Home;
+export default Main;

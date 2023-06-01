@@ -1,17 +1,17 @@
-// next.config.js
+const path = require('path');
 
 module.exports = {
-    webpack: (config) => {
-      config.module.rules.push({
-        test: /\.s[ac]ss$/i,
-        use: [
-          'style-loader',
-          'css-loader',
-          'sass-loader',
-        ],
-      });
-  
-      return config;
-    },
-  };
-  
+  webpack: (config) => {
+    config.module.rules.push({
+      test: /\.sass$/,
+      use: [
+        'style-loader',
+        'css-loader',
+        'sass-loader',
+      ],
+      include: path.resolve(__dirname, '../'),
+    });
+
+    return config;
+  },
+};
