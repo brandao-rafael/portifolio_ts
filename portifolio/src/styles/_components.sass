@@ -1,0 +1,45 @@
+.btn
+    border: none
+    border-radius: 25px
+    cursor: pointer
+    font-size: 1rem
+    font-weight: 400
+    padding: 1rem 1.5rem
+    transition: all 0.3s ease-in-out
+    font-weight: 600
+    &:hover
+        transition: all 0.3s ease-in-out
+
+.btn-white
+    background-color: $lt-primary
+    color: $bl-primary
+    &:hover
+        background-color: $lt-secondary
+        color: $bl-secondary
+        &:active
+            background-color: $bl-primary
+            color: $lt-secondary
+
+.btn-black
+    background-color: $bl-primary
+    color: $lt-secondary
+    border: solid 1px white
+    &:hover
+        background-color: $lt-secondary
+        color: $bl-secondary
+        &:active
+            background-color: $bl-primary
+            color: $lt-secondary
+
+.btn-gradient
+    background: linear-gradient(to right, #B16CEA, #FF5E69, #FF8A56, #FFA84B)
+    color: white
+    &:hover
+        background: linear-gradient(to right, #B16CEA, #FF5E69, #FF8A56, #FFA84B)
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+        transition: all 0.3s ease-in-ou
+        &:active
+            background: linear-gradient(to right, #B16CEA, #FF5E69, #FF8A56, #FFA84B)
+            -webkit-background-clip: text
+            -webkit-text-fill-color: transparent
