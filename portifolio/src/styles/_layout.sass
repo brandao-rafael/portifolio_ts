@@ -8,10 +8,6 @@
             font-size: 4rem
             font-weight: 600
             margin: 1rem 0
-            span
-                background: linear-gradient(to right, #B16CEA, #FF5E69, #FF8A56, #FFA84B)
-                -webkit-background-clip: text
-                -webkit-text-fill-color: transparent
 
         p
             font-size: 1rem
@@ -30,15 +26,50 @@
         margin: 20vh 0 0 4rem
         width: 15rem
 
+.project-container
+    background-color: $bl-secondary
+    display: flex
+    flex-direction: column
+    margin: 10vh 0 0 0
+    padding: 5vh 0 0 0
+    width: 100%
+
+    h3
+        font-size: 1.8rem
+        font-weight: 600
+        margin: 0 0 2rem 4rem
+
+    p
+        color: $lt-primary
+        font-size: 1rem
+        margin: 0 0 2rem 4rem
+        
+        a
+            color: $lt-primary
+            font-weight: 600
+            text-decoration: none
+            transition: all 0.3s ease-in-out
+            &:hover
+                font-size: 1.1rem
+                color: $lt-secondary
+                transition: all 0.3s ease-in-out
+
+
+
+.project-content
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    grid-gap: 0rem
+    width: 80%
 
 .container-card
     align-items: center
-    background-color: $bl-secondary
-    border-radius: 5px
+    background-color: $bl-primary
+    border-radius: 15px
     height: fit-content
     margin: 2rem 0 2rem 4rem
     padding: 0 0 1rem 0
-    width: 35vh
+    width: 45vh
 
     h3
         color: $lt-primary
@@ -67,5 +98,5 @@
             transition: all 0.3s ease-in-out
 
     img
-        border-radius: 5px 5px 0 0
+        border-radius: 10px 10px 0 0
         width: 100%
