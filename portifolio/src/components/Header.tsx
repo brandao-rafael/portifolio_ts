@@ -13,7 +13,7 @@ export default class Header extends Component {
             <a href="#">Projects</a>
         </nav>
         <div>
-            <button type="button">Let's Talk</button>
+            <button className="btn btn-gradient" type="button">Let's Talk</button>
         </div>
       </header>
     )
