@@ -1,3 +1,25 @@
+@mixin gradient()
+    background: linear-gradient(to right, #B16CEA, #FF5E69, #FF8A56, #FFA84B)
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+
+@mixin btn-gradient()
+  background: linear-gradient(to right, #B16CEA, #FF5E69, #FF8A56, #FFA84B)
+  color: white
+
+  &:hover 
+    background: linear-gradient(to right, #B16CEA, #FF5E69, #FF8A56, #FFA84B)
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+    transition: all 0.3s ease-in-out
+
+  &:active
+    background: linear-gradient(to right, #B16CEA, #FF5E69, #FF8A56, #FFA84B)
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+
+    
+    
 .btn
     border: none
     border-radius: 25px
@@ -37,14 +59,11 @@
             color: $lt-secondary
 
 .btn-gradient
-    background: linear-gradient(to right, #B16CEA, #FF5E69, #FF8A56, #FFA84B)
-    color: white
+    @include btn-gradient
+    transition: all 0.3s ease-in-out
     &:hover
-        background: linear-gradient(to right, #B16CEA, #FF5E69, #FF8A56, #FFA84B)
-        -webkit-background-clip: text
-        -webkit-text-fill-color: transparent
-        transition: all 0.3s ease-in-ou
+        @include btn-gradient
+        transition: all 0.3s ease-in-out
         &:active
-            background: linear-gradient(to right, #B16CEA, #FF5E69, #FF8A56, #FFA84B)
-            -webkit-background-clip: text
-            -webkit-text-fill-color: transparent
+            @include btn-gradient
+            transition: all 0.3s ease-in-out

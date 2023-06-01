@@ -5,7 +5,7 @@ import projects from "../helpers/projects.js";
 export default class Projects extends Component {
   render() {
     return (
-      <div className="project-container">
+      <div className="project-container" id="projects">
         <h3>
           Look at Some <br />
           <span>Projects.</span>

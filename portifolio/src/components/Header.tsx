@@ -10,7 +10,7 @@ export default class Header extends Component {
         <nav>
           <a href="#">Home</a>
           <a href="#">About</a>
-          <a href="#">Projects</a>
+          <a href="#projects">Projects</a>
         </nav>
         <div>
           <button className="btn btn-gradient" type="button">
