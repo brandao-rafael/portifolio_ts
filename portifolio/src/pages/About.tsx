@@ -2,14 +2,14 @@ import React from "react";
 
 const About: React.FC = () => {
   return (
-    <div>
-      <div>
+    <div className="about-container">
+      <div className="about-header">
         <h3>
           <span>Rafael Brandão</span>
         </h3>
         <h2>Fullstack Web Developer</h2>
       </div>
-      <div>
+      <div className="about-content">
         <div>
           <p>
             Born in Borda da Mata, Minas Gerais, Brazil, in 1992, I stand out as
