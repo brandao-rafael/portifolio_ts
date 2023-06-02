@@ -6,14 +6,16 @@ export default class Projects extends Component {
   render() {
     return (
       <div className="project-container" id="projects">
-        <h3>
-          Look at Some <br />
-          <span>Projects.</span>
-        </h3>
-        <p>
-          These are just some js projects developed by me, you can see more on
-          my <a href="https://github.com/brandao-rafael" target="_blank">github profile</a> 
-        </p>
+        <div className="title-project-container">
+          <h3>
+            Look at Some <br />
+            <span>Projects.</span>
+          </h3>
+          <p>
+            Here are a few projects developed by me. <br /> You can see more on
+            my <a href="https://github.com/brandao-rafael" target="_blank">github profile</a> 
+          </p>
+        </div>
         <div className="project-content">
           {projects.map((project, index) => (
             <ProjectCard
