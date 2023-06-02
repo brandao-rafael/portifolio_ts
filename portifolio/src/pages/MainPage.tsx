@@ -1,16 +1,18 @@
-import React, { Component } from "react";
+import React from "react";
 import Header from "../components/Header";
 import MainCoverLetter from "../components/MainCoverLetter";
 import Projects from "./Projects";
+import About from "./About";
 
-export default class MainPage extends Component {
-  render() {
-    return (
-      <div>
-        <Header />
-        <MainCoverLetter />
-        <Projects />
-      </div>
-    );
-  }
-}
+const MainPage: React.FC = () => {
+  return (
+    <div>
+      <Header />
+      <MainCoverLetter />
+      <Projects />
+      <About />
+    </div>
+  );
+};
+
+export default MainPage;
