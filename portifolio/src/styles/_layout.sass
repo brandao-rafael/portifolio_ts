@@ -80,7 +80,7 @@
 .container-card
     align-items: center
     background-color: $bl-primary
-    border-radius: 15px
+    // border-radius: 15px
     height: fit-content
     margin: 2rem 0 2rem 4rem
     padding: 0 0 1rem 0
@@ -113,7 +113,6 @@
             transition: all 0.3s ease-in-out
 
     img
-        border-radius: 10px 10px 0 0
         width: 100%
 
 .about-container
@@ -142,3 +141,44 @@
                 font-weight: 400
                 font-size: 1.1rem
                 margin: 0 0 4rem 0
+
+.skill-container
+    background-color: $bl-secondary
+    display: flex
+    flex-direction: column
+    padding: 5vh
+    width: 100%
+    p
+        margin: 5vh 4rem
+        a
+            color: $lt-primary
+            font-weight: 600
+            text-decoration: none
+            transition: all 0.3s ease-in-out
+            &:hover
+                color: $lt-secondary
+                font-size: 1.1rem
+                transition: all 0.3s ease-in-out
+    .skill-content
+        display: grid
+        grid-template-columns: repeat(6, 1fr)
+        grid-gap: 2rem
+        margin: 5vh 0 0 4rem
+        width: 80%
+        .skill-card
+            align-items: center
+            background-color: $bl-primary
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            padding: 2rem 0 2rem 0
+            transition: all 0.3s ease-in-out
+            img
+                width: 3rem
+            p
+                margin: 1rem 0 0 0
+                font-weight: 500
+            &:hover
+                transition: all 0.3s ease-in-out
+                transform: scale(1.2)
+            

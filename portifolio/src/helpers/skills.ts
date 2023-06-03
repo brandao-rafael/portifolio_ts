@@ -30,10 +30,6 @@ const skills: ISkillCard[] = [
         src: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original.svg',
     },
     {
-        name: 'Tailwind CSS',
-        src: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-original.svg',
-    },
-    {
         name: 'Jest',
         src: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/jest/jest-plain.svg',
     },
@@ -76,10 +72,6 @@ const skills: ISkillCard[] = [
     {
         name: 'Flutter',
         src: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/flutter/flutter-original.svg',
-    },
-    {
-        name: 'GitHub',
-        src: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg',
     },
 ]
 
