@@ -1,4 +1,5 @@
 import React from "react";
+import SocialMedia from "./SocialMedia";
 
 const Header: React.FC = () => {
   return (
@@ -11,10 +12,11 @@ const Header: React.FC = () => {
         <a href="#">About</a>
         <a href="#projects">Projects</a>
       </nav>
-      <div>
+      <div className="header-btn">
         <button className="btn btn-gradient" type="button">
           Let's Talk
         </button>
+        <SocialMedia />
       </div>
     </header>
   );
