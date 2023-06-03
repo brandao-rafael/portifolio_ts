@@ -1,6 +1,6 @@
 import React from "react";
 import ProjectCard from "../components/ProjectCard";
-import projects from "../helpers/projects.js";
+import projects from "../helpers/projects";
 
 const Projects: React.FC = () => {
   return (
