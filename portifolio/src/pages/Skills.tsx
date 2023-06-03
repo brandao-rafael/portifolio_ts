@@ -4,7 +4,7 @@ import SkillCard from '../components/SkillCard';
 
 const Skills: React.FC = () => {
   return (
-    <div className='skill-container'>
+    <div className='skill-container' id='skills'>
       <div>
         <h3>
             My <br />

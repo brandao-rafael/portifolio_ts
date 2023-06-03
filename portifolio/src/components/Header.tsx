@@ -9,15 +9,11 @@ const Header: React.FC = () => {
       </div>
       <nav>
         <a href="#">Home</a>
-        <a href="#">About</a>
         <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
       </nav>
-      <div className="header-btn">
-        <button className="btn btn-gradient" type="button">
-          Let's Talk
-        </button>
-        <SocialMedia />
-      </div>
+      <SocialMedia />
     </header>
   );
 };
