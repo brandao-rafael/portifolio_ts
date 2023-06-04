@@ -12,9 +12,7 @@
                 cursor: pointer
                 transition: all 0.3s ease-in-out
                 transform: scale(1.2)
-    
-    
-    
+
 .cover-letter-container
     .cover-title
         color: $lt-primary
@@ -57,12 +55,11 @@
     p
         color: $lt-primary
         font-size: 1rem
-        margin: 5vh 4rem 
-        
+        margin: 5vh 4rem
+
         a
             color: $lt-primary
             font-weight: 600
-            text-decoration: none
             transition: all 0.3s ease-in-out
             &:hover
                 font-size: 1.1rem
@@ -98,11 +95,10 @@
         font-weight: 200
         margin: 1rem 0
         padding: 0 1rem
-    
+
     a
         color: $lt-primary
-        font-weight: 400
-        text-decoration: none
+        font-weight: 40
         transition: all 0.3s ease-in-out
         &:hover
             color: $lt-secondary
@@ -125,13 +121,12 @@
             font-weight: 200
             margin: 0 0 2rem 4rem
 
-
     .about-content
         display: flex
         justify-content: space-between
         margin: 5vh 0 0 4rem
         width: 80%
-        
+
         div
             width: 40%
 
@@ -150,23 +145,26 @@
     flex-direction: column
     padding: 5vh 0
     width: 100%
+
     p
         margin: 5vh 4rem
+        
         a
             color: $lt-primary
             font-weight: 600
-            text-decoration: none
             transition: all 0.3s ease-in-out
             &:hover
                 color: $lt-secondary
                 font-size: 1.1rem
                 transition: all 0.3s ease-in-out
+
     .skill-content
         display: grid
         grid-template-columns: repeat(6, 1fr)
         grid-gap: 2rem
         margin: 5vh 0 0 4rem
         width: 80%
+
         .skill-card
             align-items: center
             background-color: $bl-primary
@@ -175,8 +173,10 @@
             justify-content: space-between
             padding: 2rem 0 2rem 0
             transition: all 0.3s ease-in-out
+
             img
                 width: 3rem
+
             p
                 margin: 1rem 0 0 0
                 font-weight: 500
@@ -187,4 +187,33 @@
 .contact-container
     display: flex
     margin: 20vh 0 0 0
-            
+    width: 100%
+
+    .contact-content
+        display: flex
+        flex-direction: column
+        margin: 5vh 0 0 4rem
+        width: 50%
+
+    .contact-description
+        width: 70%
+
+        h2
+            font-size: 2rem
+            margin: 0 0 2rem 0
+
+        p
+            font-size: 1.1rem
+            font-weight: 300
+            margin: 4vh 0
+
+    .contact-item
+        align-items: center
+        display: flex
+        margin: 1rem 0 0 0
+
+        p
+            color: $lt-primary
+            font-size: 1.1rem
+            font-weight: 500
+            margin: 0 1rem 0 1rem

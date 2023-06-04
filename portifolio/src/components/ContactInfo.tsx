@@ -9,13 +9,13 @@ import {
 
 const ContactInfo: React.FC = () => {
   return (
-    <div className="contact-title-content">
-      <h2>
-        <span>
-          Get in touch <br />
-        </span>
-      </h2>
+    <div className="contact-content">
       <div className="contact-description">
+        <h2>
+          <span>
+            Get in touch <br />
+          </span>
+        </h2>
         <p>
           Have a project in mind? Looking for a developer to your team? Want to
           know more about me? Feel free to contact me in one of the channels
@@ -36,14 +36,18 @@ const ContactInfo: React.FC = () => {
           <div dangerouslySetInnerHTML={{ __html: locationSvg }} />
           <p>Itajubá, Minas Gerais, Brazil</p>
         </div>
-        <div className="contact-item">
-          <div dangerouslySetInnerHTML={{ __html: githubSvg }} />
-          <p>github.com/brandao-rafael</p>
-        </div>
-        <div className="contact-item">
-          <div dangerouslySetInnerHTML={{ __html: linkedinSvg }} />
-          <p>linkedin.com/in/brandao-rafael</p>
-        </div>
+				<a href="https://www.github.com/brandao-rafael" target="_blank">
+					<div className="contact-item">
+						<div dangerouslySetInnerHTML={{ __html: githubSvg }} />
+						<p>github.com/brandao-rafael</p>
+					</div>
+				</a>
+        <a href="https://www.linkedin.com/in/brandao-rafael/" target="_blank">
+          <div className="contact-item">
+            <div dangerouslySetInnerHTML={{ __html: linkedinSvg }} />
+            <p>linkedin.com/in/brandao-rafael</p>
+          </div>
+        </a>
       </div>
     </div>
   );
