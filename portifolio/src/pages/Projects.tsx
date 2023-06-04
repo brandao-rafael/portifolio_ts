@@ -4,7 +4,7 @@ import projects from "../helpers/projects";
 
 const Projects: React.FC = () => {
   return (
-    <div className="project-container" id="projects">
+    <div className="container project-container" id="projects">
       <div className="title-project-container">
         <h3>
           Look at Some <br />
