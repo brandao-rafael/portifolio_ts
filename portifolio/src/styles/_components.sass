@@ -1,69 +1,57 @@
+$font-stack: 'Bai Jamjuree', sans-serif
+
 @mixin gradient()
-    background: linear-gradient(to right, #B16CEA, #FF5E69, #FF8A56, #FFA84B)
-    -webkit-background-clip: text
-    -webkit-text-fill-color: transparent
+  background: linear-gradient(to right, #B16CEA, #FF5E69, #FF8A56, #FFA84B)
+  -webkit-background-clip: text
+  -webkit-text-fill-color: transparent
 
 @mixin btn-gradient()
   background: linear-gradient(to right, #B16CEA, #FF5E69, #FF8A56, #FFA84B)
-  color: white
+  background-size: 200% 100%
+  color: $lt-primary
 
-  &:hover 
-    background: linear-gradient(to right, #B16CEA, #FF5E69, #FF8A56, #FFA84B)
-    -webkit-background-clip: text
-    -webkit-text-fill-color: transparent
-    transition: all 0.3s ease-in-out
+  &:hover
+    background-position: -100% 0
 
   &:active
-    background: linear-gradient(to right, #B16CEA, #FF5E69, #FF8A56, #FFA84B)
-    -webkit-background-clip: text
-    -webkit-text-fill-color: transparent
+    background-position: 0 0
 
-    
-    
-.btn
+@mixin btn-gradient-bw($start-color, $end-color)
+  background: linear-gradient(to right, $start-color, $start-color, $start-color, $end-color, $end-color)
+  background-size: 200% 100%
+  color: $end-color
+  border: solid 1px $end-color
+
+  &:hover
+    background-position: -100% 0
     border: none
-    border-radius: 25px
-    cursor: pointer
-    font-size: 1rem
-    font-weight: 400
-    padding: 1rem 1.5rem
+    color: $start-color
+
+  &:active
+    background-position: 0 0
+    color: $end-color
+
+
+.btn
+  border: none
+  border-radius: 25px
+  cursor: pointer
+  font-family: $font-stack
+  font-size: 1rem
+  font-weight: 400
+  padding: 0.8rem 1rem
+  transition: all 0.3s ease-in-out
+  font-weight: 600
+  width: 10rem
+  &:hover
     transition: all 0.3s ease-in-out
-    font-weight: 600
-    &:hover
-        transition: all 0.3s ease-in-out
 
 .btn-white
-    background-color: $lt-primary
-    color: $bl-primary
-    transition: all 0.3s ease-in-out
-    &:hover
-        background-color: $bl-primary
-        border: solid 1px $lt-secondary
-        color: $lt-secondary
-        transition: all 0.3s ease-in-out
-        &:active
-            background-color: $bl-primary
-            color: $lt-secondary
+  @include btn-gradient-bw($lt-primary, $bl-secondary)
+  
 
 .btn-black
-    background-color: $bl-primary
-    color: $lt-secondary
-    border: solid 1px white
-    transition: all 0.3s ease-in-out
-    &:hover
-        background-color: $lt-secondary
-        color: $bl-secondary
-        transition: all 0.3s ease-in-out
-        &:active
-            background-color: $bl-primary
-            color: $lt-secondary
+  @include btn-gradient-bw($bl-primary, $lt-primary)
 
 .btn-gradient
-    @include btn-gradient
-    transition: all 0.3s ease-in-out
-    &:hover
-        @include btn-gradient
-        transition: all 0.3s ease-in-out
-        &:active
-            @include btn-gradient
-            transition: all 0.3s ease-in-out
+  @include btn-gradient()
