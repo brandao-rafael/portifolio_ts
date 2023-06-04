@@ -51,45 +51,46 @@ const Contact: React.FC = () => {
       <div className="contact-container">
         <ContactInfo />
         <div className="contact-form">
-          <fieldset>
-            <form onSubmit={onSubmit}>
-              <label htmlFor="fromName">
-                <input
-                  id="fromName"
-                  type="text"
-                  name="from_name"
-                  placeholder=" Your name"
-                  value={toSend.from_name}
-                  onChange={(e) => handleChange(e)}
-                  required
-                />
-              </label>
-              <label htmlFor="userEmail">
-                <input
-                  id="userEmail"
-                  type="text"
-                  name="reply_to"
-                  placeholder=" Your email"
-                  value={toSend.reply_to}
-                  onChange={(e) => handleChange(e)}
-                  required
-                />
-              </label>
-              <label htmlFor="message">
-                <textarea
-                  id="message"
-                  name="message"
-                  placeholder=" Your message"
-                  value={toSend.message}
-                  onChange={(e) => handleChange(e)}
-                  required
-                />
-              </label>
-              <button type="submit" className="btn btn-gradient">
-                Send
-              </button>
-            </form>
-          </fieldset>
+          <form onSubmit={onSubmit}>
+            <label htmlFor="fromName">
+              Your Name
+              <input
+                id="fromName"
+                type="text"
+                name="from_name"
+                placeholder=" Enter your name"
+                value={toSend.from_name}
+                onChange={(e) => handleChange(e)}
+                required
+              />
+            </label>
+            <label htmlFor="userEmail">
+              Your Email
+              <input
+                id="userEmail"
+                type="text"
+                name="reply_to"
+                placeholder=" Your email"
+                value={toSend.reply_to}
+                onChange={(e) => handleChange(e)}
+                required
+              />
+            </label>
+            <label htmlFor="message">
+              Tell me a bit more what you are looking for
+              <textarea
+                id="message"
+                name="message"
+                placeholder=" Your message"
+                value={toSend.message}
+                onChange={(e) => handleChange(e)}
+                required
+              />
+            </label>
+            <button type="submit" className="btn btn-gradient">
+              SUBMIT NOW
+            </button>
+          </form>
         </div>
       </div>
     </div>

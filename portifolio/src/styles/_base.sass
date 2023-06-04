@@ -25,6 +25,24 @@ h3
     font-weight: 600
     margin: 0 0 0 4rem
 
+input, textarea
+    background-color: $bl-secondary
+    border: none
+    color: $lt-primary
+    font-size: 1rem
+    font-family: $font-stack
+    font-weight: 400
+    margin: 1rem 0
+    padding: 0.5rem
+    &:focus
+        outline: none
+    &::placeholder
+        font-size: 0.8rem
+        font-weight: 200
+
+textarea
+    height: 10rem
+
 header
     align-items: center
     background-color: $bl-primary
