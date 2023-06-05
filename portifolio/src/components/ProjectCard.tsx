@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 const ProjectCard: React.FC<IProjectCardProps> = ({
   img,
   title,
-  description,
+  i,
   url,
 }) => {
   const { t } = useTranslation();
@@ -14,7 +14,7 @@ const ProjectCard: React.FC<IProjectCardProps> = ({
     <div className="container-card">
       <img src={img} alt="project cover" />
       <h3>{title}</h3>
-      <p>{description}</p>
+      <p>{t(`projectCard.description${i+1}`)}</p>
       <a href={url} target="_blank" rel="noopener noreferrer">
         {t('projectCard.link')}
       </a>

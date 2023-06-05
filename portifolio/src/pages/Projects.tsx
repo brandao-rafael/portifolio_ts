@@ -24,7 +24,7 @@ const Projects: React.FC = () => {
         {projects.map((project, index) => (
           <ProjectCard
             title={project.name}
-            description={project.description}
+            i={index}
             img={project.src}
             url={project.url}
             key={index}
