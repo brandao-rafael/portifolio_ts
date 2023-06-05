@@ -1,20 +1,23 @@
 import React from 'react';
 import skills from '../helpers/skills';
 import SkillCard from '../components/SkillCard';
+import { useTranslation } from 'react-i18next';
 
 const Skills: React.FC = () => {
+  const { t } = useTranslation();
+
   return (
     <div className='container skill-container' id='skills'>
       <div>
         <h3>
-            My <br />
-            <span>Skills.</span>
+            {t('skills.title')} <br />
+            <span>{t('skills.titleSpan')}</span>
         </h3>
         <p>
-            Here are a few skills developed by me. <br /> You can see more on my 
+            {t('skills.subtitle')} <br /> {t('skills.subtitle2')}
             {" "}
             <a href="https://github.com/brandao-rafael" target="_blank">
-                github profile
+              {t('github.profile')}
             </a>
         </p>
       </div>

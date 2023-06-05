@@ -1,19 +1,22 @@
 import React from "react";
 import ProjectCard from "../components/ProjectCard";
 import projects from "../helpers/projects";
+import { useTranslation } from "react-i18next";
 
 const Projects: React.FC = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="container project-container" id="projects">
       <div className="title-project-container">
         <h3>
-          Look at Some <br />
-          <span>Projects.</span>
+        {t('projects.title')}<br />
+          <span>{t('projects.titleSpan')}</span>
         </h3>
         <p>
-          Here are a few projects developed by me. <br /> You can see more on my{" "}
+          {t('projects.subtitle1')} <br /> {t('projects.subtitle2')}{" "}
           <a href="https://github.com/brandao-rafael" target="_blank">
-            github profile
+          {t('github.profile')}
           </a>
         </p>
       </div>
