@@ -18,7 +18,17 @@ span
     @include gradient
 
 a
+    color: $lt-primary
+    font-size: 1rem
+    font-weight: 400
     text-decoration: none
+    transition: all 0.3s ease-in-out
+
+    &:hover
+        color: $lt-secondary
+        font-size: 1.1rem
+        font-weight: 500
+        transition: all 0.3s ease-in-out
 
 h3
     font-size: 1.8rem
@@ -65,18 +75,8 @@ header
         justify-content: left
         width: 40%
         a
-            color: $lt-primary
-            font-size: 1rem
-            font-weight: 400
-            text-decoration: none
             margin: 0 1rem
-            transition: all 0.3s ease-in-out
 
-            &:hover
-                color: $lt-secondary
-                font-size: 1.1rem
-                font-weight: 500
-                transition: all 0.3s ease-in-out
 
     .header-btn
         align-items: center

@@ -4,6 +4,7 @@ import MainCoverLetter from "../components/MainCoverLetter";
 import Projects from "./Projects";
 import About from "./About";
 import Skills from "./Skills";
+import Footer from "../components/Footer";
 
 const MainPage: React.FC = () => {
   return (
@@ -13,6 +14,7 @@ const MainPage: React.FC = () => {
       <Projects />
       <About />
       <Skills />
+      <Footer />
     </div>
   );
 };
