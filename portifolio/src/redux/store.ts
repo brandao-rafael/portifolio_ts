@@ -1,4 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit';
+import languageReducer from './slice';
 
 // Define the initial state
 const initialState = {
@@ -17,7 +18,9 @@ function reducer(state = initialState, action: any) {
 
 // Create the Redux store
 const store = configureStore({
-  reducer,
+  reducer: {
+    language: languageReducer,
+  },
 });
 
 export default store;

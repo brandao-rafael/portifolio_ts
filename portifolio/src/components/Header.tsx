@@ -1,5 +1,6 @@
 import React from "react";
 import SocialMedia from "./SocialMedia";
+import LanguageToggle from "./LanguageToggle";
 
 const Header: React.FC = () => {
   return (
@@ -15,6 +16,7 @@ const Header: React.FC = () => {
         <a href="/Contact">Contact</a>
       </nav>
       <SocialMedia />
+      <LanguageToggle />
     </header>
   );
 };
