@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="container">
+    <footer>
       <hr />
       <h2>XFOLIO.</h2>
       <p>
