@@ -7,6 +7,7 @@
   "button.toggle": "Alternar Idioma",
   "button.getInTouch": "Entre em contato",
   "button.viewMyWorks": "Veja meus trabalhos",
+  "button.submit": "ENVIAR",
   "cover.title": "Desenvolvedor Web Fullstack, do Brasil.",
   "cover.titleSpan": "Oi, eu sou o Rafael,",
   "cover.subtitle": "Um desenvolvedor web Fullstack, baseado no Brasil. Eu tenho paixão pelo desenvolvimento e adoro criar para web e dispositivos móveis.",
@@ -29,5 +30,10 @@
   "skills.title": "Minhas",
   "skills.titleSpan": "Habilidades",
   "skills.subtitle": "Aqui estão algumas habilidades desenvolvidas por mim.",
-  "skills.subtitle2": "Você pode ver mais no meu"
+  "skills.subtitle2": "Você pode ver mais no meu",
+  "contact.title": "Entre em contato",
+  "contact.subtitle": "Tem um projeto em mente? Procurando um desenvolvedor para sua equipe? Quer saber mais sobre mim? Sinta-se à vontade para entrar em contato comigo por um dos canais abaixo ou preencha o formulário e entrarei em contato o mais breve possível.",
+  "contact.form.name": "Seu nome",
+  "contact.form.email": "Seu e-mail",
+  "contact.form.message": "Conte-me um pouco mais sobre o que você está procurando"
 }

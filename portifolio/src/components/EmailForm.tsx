@@ -1,6 +1,7 @@
 import React from "react";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
+import { useTranslation } from "react-i18next";
 
 const SERVICE_ID = process.env.SERVICE_ID;
 const TEMPLATE_ID = process.env.TEMPLATE_ID;
@@ -13,6 +14,8 @@ const EmailForm: React.FC = () => {
     message: "",
     reply_to: "",
   });
+
+  const { t } = useTranslation();
 
   const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -48,7 +51,7 @@ const EmailForm: React.FC = () => {
     <div className="contact-form">
       <form onSubmit={onSubmit}>
         <label htmlFor="fromName">
-          Your Name
+          {t("contact.form.name")}
           <input
             id="fromName"
             type="text"
@@ -60,7 +63,7 @@ const EmailForm: React.FC = () => {
           />
         </label>
         <label htmlFor="userEmail">
-          Your Email
+          {t("contact.form.email")}
           <input
             id="userEmail"
             type="text"
@@ -72,7 +75,7 @@ const EmailForm: React.FC = () => {
           />
         </label>
         <label htmlFor="message">
-          Tell me a bit more what you are looking for
+          {t("contact.form.message")}
           <textarea
             id="message"
             name="message"
@@ -83,7 +86,7 @@ const EmailForm: React.FC = () => {
           />
         </label>
         <button type="submit" className="btn btn-gradient">
-          SUBMIT NOW
+          {t("button.submit")}
         </button>
       </form>
       <ToastContainer
