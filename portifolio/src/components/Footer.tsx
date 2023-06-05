@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
       <h2>XFOLIO.</h2>
       <p>
         © Designed by
-        <a href="https://www.figma.com/@kartikb"> Kartik Bansal</a>
+        <a href="https://www.figma.com/@kartikb" target="_blank"> Kartik Bansal</a>
       </p>
       <p>
         All differences to original design can be see in{" "}

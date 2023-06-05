@@ -1,4 +1,5 @@
-$font-stack: 'Bai Jamjuree', sans-serif
+@mixin transition($properties: all, $duration: 0.3s, $timing-function: ease-in-out)
+  transition: $properties $duration $timing-function
 
 @mixin gradient()
   background: linear-gradient(to right, #B16CEA, #FF5E69, #FF8A56, #FFA84B)
@@ -9,12 +10,7 @@ $font-stack: 'Bai Jamjuree', sans-serif
   background: linear-gradient(to right, #B16CEA, #FF5E69, #FF8A56, #FFA84B)
   background-size: 200% 100%
   color: $lt-primary
-
-  &:hover
-    background-position: -100% 0
-
-  &:active
-    background-position: 0 0
+  @include transition(background-position, color, border)
 
 @mixin btn-gradient-bw($start-color, $end-color)
   background: linear-gradient(to right, $start-color, $start-color, $start-color, $end-color, $end-color)
@@ -30,31 +26,3 @@ $font-stack: 'Bai Jamjuree', sans-serif
   &:active
     background-position: 0 0
     color: $end-color
-
-
-.btn
-  border: none
-  border-radius: 25px
-  cursor: pointer
-  font-family: $font-stack
-  font-size: 1rem
-  font-weight: 400
-  padding: 0.8rem 1rem
-  transition: all 0.3s ease-in-out
-  font-weight: 600
-  width: 10rem
-  &:hover
-    transition: all 0.3s ease-in-out
-
-.btn-white
-  @include btn-gradient-bw($lt-primary, $bl-secondary)
-  
-
-.btn-black
-  @include btn-gradient-bw($bl-primary, $lt-primary)
-
-.btn-gradient
-  @include btn-gradient()
-
-.container
-    padding: 10vh 0
