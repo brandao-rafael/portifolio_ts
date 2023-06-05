@@ -18,8 +18,8 @@ const Header: React.FC = () => {
         <a href="/#skills">{t('navbar.skills')}</a>
         <a href="/Contact">{t('navbar.contact')}</a>
       </nav>
-      <SocialMedia />
       <LanguageToggle />
+      <SocialMedia />
     </header>
   );
 };

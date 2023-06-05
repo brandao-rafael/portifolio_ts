@@ -9,7 +9,12 @@ const LanguageToggle: React.FC = () => {
     i18n.changeLanguage(newLanguage);
   };
 
-  return <button onClick={handleToggle}>{t('button.toggle')}</button>;
+  return <button className="btn btn-black" onClick={handleToggle}>
+		<p>
+			{i18n.language === "en" ? "🇧🇷" : "🇺🇸"}
+			{t('button.toggle')}
+		</p>
+		</button>;
 };
 
 export default LanguageToggle;
