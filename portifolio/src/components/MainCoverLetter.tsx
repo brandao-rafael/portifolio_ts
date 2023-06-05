@@ -1,8 +1,10 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import { useRouter } from "next/router";
 
 const MainCoverLetter: React.FC = () => {
   const { t } = useTranslation();
+  const router = useRouter();
 
   return (
     <div className="cover-letter-container">
@@ -16,10 +18,18 @@ const MainCoverLetter: React.FC = () => {
         </p>
       </div>
       <div className="cover-buttons">
-        <button type="button" className="btn btn-gradient">
+        <button
+          type="button"
+          className="btn btn-gradient"
+          onClick={() => router.push("/Contact")}
+        >
           {t('button.getInTouch')}
         </button>
-        <button type="button" className="btn btn-black">
+        <button
+          type="button"
+          className="btn btn-black"
+          onClick={() => router.push("/#projects")}
+        >
           {t('button.viewMyWorks')}
         </button>
       </div>
