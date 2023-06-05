@@ -18,17 +18,16 @@ span
   @include gradient
 
 a
+  @include transition
   color: $lt-primary
   font-size: 1rem
   font-weight: 400
   text-decoration: none
-  @include transition
-
-    &:hover
-      color: $lt-secondary
-      font-size: 1.1rem
-      font-weight: 500
-      @include transition
+  &:hover
+    @include transition
+    color: $lt-secondary
+    font-size: 1.1rem
+    font-weight: 500
 
 h3
   font-size: 1.8rem
@@ -70,12 +69,12 @@ header
     text-decoration: none
     &:hover
       cursor: pointer
-    nav
-      display: flex
-      justify-content: left
-      width: 40%
-      a
-        margin: 0 1rem
+  nav
+    display: flex
+    justify-content: left
+    width: 40%
+    a
+      margin: 0 1rem
 
     .header-btn
       align-items: center
