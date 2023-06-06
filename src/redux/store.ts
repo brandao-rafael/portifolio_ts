@@ -1,22 +1,7 @@
 import { configureStore } from '@reduxjs/toolkit';
 import languageReducer from './slice';
 
-// Define the initial state
-const initialState = {
-  // Your initial state properties here
-};
-
-// Define a reducer function to handle state updates
-function reducer(state = initialState, action: any) {
-  // Handle different action types to update the state
-  switch (action.type) {
-    // Handle specific action types and update the state accordingly
-    default:
-      return state;
-  }
-}
-
-// Create the Redux store
+// The Redux store
 const store = configureStore({
   reducer: {
     language: languageReducer,
