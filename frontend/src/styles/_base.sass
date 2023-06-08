@@ -1,0 +1,102 @@
+@import 'variables'
+@import 'mixins'
+
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+html
+  scroll-behavior: smooth
+
+body
+  background-color: $bl-primary
+  color: $lt-primary
+  font-family: $font-stack
+
+span
+  @include gradient
+
+a
+  @include transition
+  color: $lt-primary
+  font-size: 1rem
+  font-weight: 400
+  text-decoration: none
+  &:hover
+    @include transition
+    color: $lt-secondary
+    font-size: 1.1rem
+    font-weight: 500
+
+h3
+  font-size: 1.8rem
+  font-weight: 600
+  margin: 0 0 0 4rem
+
+input, textarea
+  background-color: $bl-secondary
+  border: none
+  color: $lt-primary
+  font-size: 1rem
+  font-family: $font-stack
+  font-weight: 400
+  margin: 1rem 0
+  padding: 0.5rem
+  &:focus
+    outline: none
+    &::placeholder
+      font-size: 0.8rem
+      font-weight: 200
+
+textarea
+  height: 10rem
+
+header
+  align-items: center
+  background-color: $bl-primary
+  display: flex
+  justify-content: space-around
+  height: 10vh
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  @media (max-width: 768px)
+    display: inline-block
+    height: fit-content
+    position: relative
+  h2
+    color: $lt-primary
+    font-size: 2rem
+    font-weight: 500
+    text-decoration: none
+    @media (max-width: 768px)
+      display: none
+    &:hover
+      cursor: pointer
+  nav
+    display: flex
+    justify-content: left
+    width: 40%
+    @media (max-width: 768px)
+      justify-content: center
+      padding: 1rem
+      width: 100%
+    a
+      margin: 0 1rem
+      @media (max-width: 768px)
+        margin: 0 0.5rem
+
+    .header-btn
+      align-items: center
+      display: flex
+      justify-content: space-between
+      width: 20rem
+  button
+    height: 2rem
+    max-width: fit-content
+    @media (max-width: 768px)
+      margin: 1rem 0 0 4rem
+    p
+      font-size: 0.7rem

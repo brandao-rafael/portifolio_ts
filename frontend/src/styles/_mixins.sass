@@ -1,0 +1,28 @@
+@mixin transition($properties: all, $duration: 0.3s, $timing-function: ease-in-out)
+  transition: $properties $duration $timing-function
+
+@mixin gradient()
+  background: linear-gradient(to right, #B16CEA, #FF5E69, #FF8A56, #FFA84B)
+  -webkit-background-clip: text
+  -webkit-text-fill-color: transparent
+
+@mixin btn-gradient()
+  background: linear-gradient(to right, #B16CEA, #FF5E69, #FF8A56, #FFA84B)
+  background-size: 200% 100%
+  color: $lt-primary
+  @include transition(background-position, color, border)
+
+@mixin btn-gradient-bw($start-color, $end-color)
+  background: linear-gradient(to right, $start-color, $start-color, $start-color, $end-color, $end-color)
+  background-size: 200% 100%
+  color: $end-color
+  border: solid 1px $end-color
+
+  &:hover
+    background-position: -100% 0
+    border: none
+    color: $start-color
+
+  &:active
+    background-position: 0 0
+    color: $end-color
