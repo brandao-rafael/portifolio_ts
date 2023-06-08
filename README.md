@@ -38,7 +38,7 @@ EMAILJS_PUBLIC_KEY=emailjs_public_key
 
 ## Screenshots
 
-![Screenshot of the app](public/images/screenshot.png)
+![Screenshot of the app](frontend/public/images/screenshot.png)
 
 ## Contributing
 
