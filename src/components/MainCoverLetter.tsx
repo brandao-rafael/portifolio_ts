@@ -1,6 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { useRouter } from "next/router";
+import ButtonResume from "./ButtonResume";
 
 const MainCoverLetter: React.FC = () => {
   const { t } = useTranslation();
@@ -25,13 +26,7 @@ const MainCoverLetter: React.FC = () => {
         >
           {t('button.getInTouch')}
         </button>
-        <button
-          type="button"
-          className="btn btn-black"
-          onClick={() => router.push("/#projects")}
-        >
-          {t('button.viewMyWorks')}
-        </button>
+        <ButtonResume />
       </div>
     </div>
   );
