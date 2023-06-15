@@ -49,4 +49,4 @@ EMAILJS_PUBLIC_KEY=emailjs_public_key
 
 ## License
 
-You are free to use this code as you wish. No credit is required. But remenber, this is a personal portfólio, so you should not use my personal information in your project.
+Feel free to utilize this code as per your requirements. No attribution is necessary for me, only for the designer. However, please note that this code belongs to a personal portfolio, so it is important not to include any of my personal information in your project.
