@@ -21,7 +21,7 @@ const projects = [
       "Project developed during Trybe's Front-End module. The goal was to develop a wallet application using React."
   },
   {
-    name: 'LinkShortener',
+    name: 'Link Shortener',
     url: 'https://linkshortener.up.railway.app/',
     src: 'https://github.com/brandao-rafael/link-shortener/blob/main/frontend/src/assets/images/screencapture/Captura%20de%20tela%202023-07-26%20151535.png?raw=true',
     description:
