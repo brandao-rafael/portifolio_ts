@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 const ButtonResume: React.FC = () => {
   const { t } = useTranslation();
   const handleDownload = () => {
-    window.open("/pdf/Rafael_Brandao_CV _May.pdf", '_blank');
+    window.open("/pdf/Rafael_CV.pdf", '_blank');
   };
 
   return (

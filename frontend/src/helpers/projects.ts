@@ -21,11 +21,11 @@ const projects = [
       "Project developed during Trybe's Front-End module. The goal was to develop a wallet application using React."
   },
   {
-    name: 'Tryunfo',
-    url: 'https://brandao-rafael.github.io/tryunfo/',
-    src: 'https://github.com/brandao-rafael/tryunfo/blob/main/images/Captura%20de%20tela%20de%202022-10-25%2011-07-49.png?raw=true',
+    name: 'LinkShortener',
+    url: 'https://linkshortener.up.railway.app/',
+    src: 'https://github.com/brandao-rafael/link-shortener/blob/main/frontend/src/assets/images/screencapture/Captura%20de%20tela%202023-07-26%20151535.png?raw=true',
     description:
-      "Project developed during Trybe's Front-End module. The goal was to develop a super trunfo application using React."
+      "Project developed to learn concepts of Styled-components, make with React and Typescript in front-end and Node.js, Express, Mongoose and MongoDb in back-end."
   },
   {
     name: 'Car Shop Backend',
