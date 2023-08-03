@@ -17,7 +17,7 @@
   "projects.subtitle2": "You can see more on my",
   "projectCard.link": "View Project",
   "projectCard.description1": "Project developed during Trybe's Front-End module. The goal was to develop a music application using React.",
-  "projectCard.description2": "Project developed during Trybe's Front-End module. The goal was to develop a solar system using React.",
+  "projectCard.description2": "Flutter project: Real-time airplane tracking and system status for X-Plane 11.",
   "projectCard.description3": "Project developed during Trybe's Front-End module. The goal was to develop a wallet application using React.",
   "projectCard.description4": "Project developed to learn concepts of Styled-components, make with React and Typescript in front-end and Node.js, Express, Mongoose and MongoDb in back-end.",
   "projectCard.description5": "Project developed during Trybe's Back-End module. The goal was to develop a car shop application using Node.js, Typescript, Mongoose and MongoDb.",

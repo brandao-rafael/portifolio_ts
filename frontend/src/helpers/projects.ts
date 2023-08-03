@@ -7,11 +7,11 @@ const projects = [
       "Project developed during Trybe's Front-End module. The goal was to develop a music application using React."
   },
   {
-    name: 'Solar System',
-    url: 'https://brandao-rafael.github.io/solar-system/',
-    src: 'https://github.com/brandao-rafael/solar-system/blob/main/src/images/Captura%20de%20tela%20de%202022-10-25%2010-53-44.png?raw=true',
+    name: 'XFlight Trackr',
+    url: 'https://github.com/brandao-rafael/XFlightTrackr',
+    src: 'https://github.com/brandao-rafael/XFlightTrackr/blob/main/screenshots/Captura%20de%20tela%202023-08-03%20134604.png?raw=true',
     description:
-      "Project developed during Trybe's Front-End module. The goal was to develop a solar system using React."
+      "This Flutter project allows integration with X-Plane 11 via UDP protocol, providing real-time aircraft location tracking and offering valuable information about the aircraft's system status."
   },
   {
     name: 'Trybe Wallet',
