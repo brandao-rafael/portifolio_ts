@@ -18,6 +18,7 @@ All variations from the original design can be viewed through [this link](
 - TypeScript
 - React
 - Redux
+- SASS
 
 ## environment variables
 If you want to run this project locally, you will need to create a `.env` file in the root directory and add the following variables:
